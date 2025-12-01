@@ -15,10 +15,12 @@
 // ●	Wyświetla cenę przed i po rabacie używając template literals
 //  // Napisz kod tutaj: 
         let cena = 100;
-let rabat = 0.15;
-cena = cena - cena*rabat;
-document.write(cena);
+        document.write(cena+"<br/>");
 console.log(cena);
+let rabat = 0.15;
+cena1 = cena - cena*rabat;
+document.write(cena1+"<br/>");
+console.log(cena1);
 
 // Zadanie 8 (4 pkt)
 // Napisz kod, który sprawdza, czy liczba jest parzysta. Użyj operatora modulo (%).
@@ -26,11 +28,11 @@ console.log(cena);
 //  // Napisz kod, który sprawdza parzystość i wyświetla wynik 
 let liczba = 17;
 if(liczba %2 == 0){
-    document.write("liczba jest pazysta")
+    document.write("liczba jest pazysta"+"<br/>")
     console.log("liczba jest pazysta")
 }
 else {
-    document.write("liczba nie jest pazysta")
+    document.write("liczba nie jest pazysta"+"<br/>")
     console.log("liczba nie jest pazysta")
 }
 
@@ -43,7 +45,7 @@ else {
 const dlugosci = 10;
 const szerokosc = 10;
 let pole = dlugosci*szerokosc;
-document.write(pole);
+document.write(pole+"<br/>");
 console.log(pole);
 
 // Zadanie 10 (4 pkt)
@@ -56,11 +58,11 @@ console.log(pole);
 let licznik = 5;
 for(let x = 0; x <= 1; x++){
 licznik++;
-document.write(licznik);
+document.write(licznik+"<br/>");
 console.log(licznik);
 }
 licznik--;
-document.write(licznik);
+document.write(licznik+"<br/>");
 console.log(licznik);
 
 //Zadanie 11 (6 pkt) – Kalkulator czasu
@@ -70,7 +72,17 @@ console.log(licznik);
 // ●	Oblicz pozostałe sekundy (użyj operatora modulo %)
 // ●	Wyświetl wynik w formacie: '135 sekund to 2 minuty i 15 sekund'
 let time = 135;
-let minuts = time/60;
+let minuts = time/60
+
+
+document.write(minuts+"<br/>")
+console.log(minuts)
+
+let converted = time %60;
+document.write(converted+"<br/>")
+console.log(converted)
+
+
     </script>
 </body>
 </html>
