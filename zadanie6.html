@@ -6,8 +6,71 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        
+    <script scr="zadanie6.js">
+        // Zadanie 7 (4 pkt)
+// Napisz kod, który:
+// ●	Tworzy zmienną 'cena' z wartością 100
+// ●	Tworzy stałą 'RABAT' z wartością 0.15 (15%)
+// ●	Oblicza cenę po rabacie (cena - cena * RABAT)
+// ●	Wyświetla cenę przed i po rabacie używając template literals
+//  // Napisz kod tutaj: 
+        let cena = 100;
+let rabat = 0.15;
+cena = cena - cena*rabat;
+document.write(cena);
+console.log(cena);
+
+// Zadanie 8 (4 pkt)
+// Napisz kod, który sprawdza, czy liczba jest parzysta. Użyj operatora modulo (%).
+//  let liczba = 17; 
+//  // Napisz kod, który sprawdza parzystość i wyświetla wynik 
+let liczba = 17;
+if(liczba %2 == 0){
+    document.write("liczba jest pazysta")
+    console.log("liczba jest pazysta")
+}
+else {
+    document.write("liczba nie jest pazysta")
+    console.log("liczba nie jest pazysta")
+}
+
+// Zadanie 9 (4 pkt)
+// Napisz kod, który oblicza pole prostokąta. Użyj const dla długości i szerokości.
+//  // const dlugosc = ?; 
+//  // const szerokosc = ?; 
+//  // let pole = ?; 
+//  // console.log(?); 
+const dlugosci = 10;
+const szerokosc = 10;
+let pole = dlugosci*szerokosc;
+document.write(pole);
+console.log(pole);
+
+// Zadanie 10 (4 pkt)
+// Napisz kod używający operatorów inkrementacji (++), aby utworzyć sekwencję liczb:
+// ●	Utwórz zmienną 'licznik' z wartością 5
+// ●	Zwiększ ją o 1 (użyj ++)
+// ●	Wyświetl wartość
+// ●	Zwiększ jeszcze raz i wyświetl
+// ●	Zmniejsz o 1 (użyj --) i wyświetl
+let licznik = 5;
+for(let x = 0; x <= 1; x++){
+licznik++;
+document.write(licznik);
+console.log(licznik);
+}
+licznik--;
+document.write(licznik);
+console.log(licznik);
+
+//Zadanie 11 (6 pkt) – Kalkulator czasu
+// Napisz program, który konwertuje sekundy na minuty i sekundy:
+// ●	Utwórz stałą lub zmienną z liczbą sekund (np. 135)
+// ●	Oblicz ile to minut (użyj Math.floor() lub dzielenie całkowite)
+// ●	Oblicz pozostałe sekundy (użyj operatora modulo %)
+// ●	Wyświetl wynik w formacie: '135 sekund to 2 minuty i 15 sekund'
+let time = 135;
+let minuts = time/60;
     </script>
 </body>
 </html>
